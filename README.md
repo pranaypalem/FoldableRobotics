@@ -163,7 +163,3 @@ For more details, refer to **`Research.pdf`**.
 
 ---
 
-
-## Additional Resources
-
-- [Project Documentation](https://github.com/pranaypalem/FoldableRobotics) (GitHub link to all resources and updates).
