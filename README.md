@@ -16,6 +16,18 @@ This research contributes to the field of biomimetic robotics, emphasizing innov
 
 ---
 
+## MuJoCo and Its Role
+
+**MuJoCo (Multi-Joint dynamics with Contact)** is a high-performance physics engine used extensively in this project to simulate the robot's movements and dynamics. It was integral to:
+
+- **Simulating Dynamics**: The four-bar mechanism and other robotic components were modeled and tested in a virtual environment to evaluate their stability and performance.
+- **Optimizing Parameters**: MuJoCo allowed iterative testing of different configurations, such as link lengths, joint angles, and stiffness, to achieve optimal lift and balance.
+- **Visualizing Movement**: The simulation provided visual feedback, enabling fine-tuning of parameters and validating the robot's locomotion design.
+
+The XML templates used in MuJoCo defined the physical structure, joint properties, and other dynamic parameters of the robot. These simulations significantly reduced the need for physical prototyping, saving time and resources.
+
+---
+
 ## Repository Contents
 
 ### Files Included
@@ -40,6 +52,9 @@ This research contributes to the field of biomimetic robotics, emphasizing innov
 5. **`Output.pdf`**
    - Summarizes the project's challenges, solutions, and key findings.
    - Highlights the implementation of a systematic approach to stabilize the four-bar mechanism.
+
+6. **Existing `README.md`**
+   - A basic placeholder file replaced by this comprehensive version.
 
 ---
 
@@ -76,7 +91,34 @@ To run the simulations and analyze the data, you need:
 - MuJoCo installed and configured
 - Required Python libraries: `numpy`, `pandas`, `matplotlib`, `mediapy`, `scipy`, `tqdm`
 
-### Installation
+---
+
+### Installation Instructions
+
+#### Installing MuJoCo
+
+1. **Download MuJoCo**:
+   - Visit the [MuJoCo website](https://mujoco.org/) and download the appropriate version for your operating system.
+
+2. **Install MuJoCo**:
+   - Follow the installation guide provided on the MuJoCo website. For Linux and macOS, ensure the `mjkey.txt` is in the MuJoCo directory.
+
+3. **Set Environment Variables**:
+   - Add the MuJoCo installation path to your system's environment variables. For example:
+     ```bash
+     export MUJOCO_PY_MJKEY_PATH=/path/to/mjkey.txt
+     export MUJOCO_PY_MJPRO_PATH=/path/to/mujoco
+     ```
+
+4. **Install `mujoco-py`**:
+   - Use pip to install the Python bindings for MuJoCo:
+     ```bash
+     pip install mujoco-py
+     ```
+
+---
+
+### Running Simulations
 
 1. Clone the repository:
    ```bash
@@ -89,20 +131,9 @@ To run the simulations and analyze the data, you need:
    pip install -r requirements.txt
    ```
 
-3. Configure MuJoCo and ensure the XML files are compatible with your setup.
+3. Open `LoopTesting.ipynb` in Jupyter Notebook and execute the cells to run simulations and analyze results.
 
----
-
-## Usage
-
-1. **Run Simulations**:
-   Open `LoopTesting.ipynb` in Jupyter Notebook and execute the cells to run simulations and analyze results.
-
-2. **Data Analysis**:
-   Use the provided functions to process simulation outputs (`robot_data.csv` and `initial_data.csv`).
-
-3. **Modify Parameters**:
-   Adjust the four-bar mechanism's parameters directly in the notebook or XML files for customized testing.
+4. Adjust the parameters in the notebook or XML files to customize the simulations.
 
 ---
 
@@ -120,10 +151,7 @@ To run the simulations and analyze the data, you need:
 
 ## References
 
-The project draws inspiration from various studies on basilisk locomotion, including:
-- Glasheen and McMahon's studies on size and force dynamics.
-- Hsieh and Lauder's analysis of water-running forces.
-
+The project draws inspiration from various studies on basilisk locomotion:
 For more details, refer to **`Research.pdf`**.
 
 ---
