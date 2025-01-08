@@ -1,3 +1,4 @@
+![robot_design_new](https://github.com/user-attachments/assets/0c9906fc-5b74-4df4-a357-484a5dac3c9b)
 
 # Foldable Robotics Project: Basilisk-Inspired Robot
 
@@ -16,6 +17,9 @@ This research contributes to the field of biomimetic robotics, emphasizing innov
 
 ---
 
+![Tracker_robot](https://github.com/user-attachments/assets/d5ff0daa-88cc-4e28-a99b-1138eab4a8c1)
+
+
 ## MuJoCo and Its Role
 
 **MuJoCo (Multi-Joint dynamics with Contact)** is a high-performance physics engine used extensively in this project to simulate the robot's movements and dynamics. It was integral to:
@@ -25,6 +29,12 @@ This research contributes to the field of biomimetic robotics, emphasizing innov
 - **Visualizing Movement**: The simulation provided visual feedback, enabling fine-tuning of parameters and validating the robot's locomotion design.
 
 The XML templates used in MuJoCo defined the physical structure, joint properties, and other dynamic parameters of the robot. These simulations significantly reduced the need for physical prototyping, saving time and resources.
+
+
+
+https://github.com/user-attachments/assets/0215e81f-5d5a-4541-8ccd-e1bca6b7b4c5
+
+
 
 ---
 
